@@ -6,7 +6,11 @@
 
 <p align="center">手机端主应用：<a href="https://github.com/HAN-BAK/BukaMusic">BukaMusic</a> · 互联端：<a href="https://github.com/HAN-BAK/BukaMusic-Connect">BukaMusic Connect</a></p>
 
-<p align="center">下载：<a href="https://github.com/HAN-BAK/BukaMusic-Desktop/releases">Releases</a>（Windows 10 1809+ / 64 位）</p>
+<p align="center">手动下载：<a href="https://github.com/HAN-BAK/BukaMusic-Desktop/releases">GitHub Releases</a> · <a href="https://gitee.com/hanhan2048/BukaMusic-Releases/releases">Gitee Releases</a></p>
+
+<p align="center">应用内更新：通过 Gitee 检测新版本并下载安装包</p>
+
+<p align="center">Windows 10 1809+ / 64 位</p>
 
 ## 功能
 
