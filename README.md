@@ -1,4 +1,4 @@
-<h1 align="center">BukaMusic Desktop</h1>
+<h1 align="center">BukaMusic Desktop（布卡音台）</h1>
 
 <p align="center"><img src="Assets/logo.png" width="112" alt="BukaMusic Desktop"></p>
 
