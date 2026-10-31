@@ -17,7 +17,7 @@ public sealed partial class AboutPage : Page
         try
         {
             await Windows.System.Launcher.LaunchUriAsync(
-                new Uri("https://github.com/HAN-BAK/BukaMusic"));
+                new Uri("https://github.com/HAN-BAK/BukaMusic-Connect"));
         }
         catch (Exception ex)
         {

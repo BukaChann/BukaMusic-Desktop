@@ -92,7 +92,7 @@ public sealed partial class MainWindow : Window
         };
 
         SetStatus(Loc.Current.Text("正在搜索局域网内的设备…"));
-        LogBus.Info("BukaMusic 控制台已启动，开始自动搜索设备");
+        LogBus.Info("布卡音台已启动，开始自动搜索设备");
     }
 
     /// <summary>Selects the stored language without triggering a reload.</summary>
@@ -153,7 +153,7 @@ public sealed partial class MainWindow : Window
         }
         leftovers.AddRange(Loc.Current.Apply(TitleBarGrid));
         leftovers.AddRange(Loc.Current.Apply(StatusBarRoot));
-        TitleAppText.Text = Loc.Current.Text("BukaMusic 控制台");
+        TitleAppText.Text = Loc.Current.Text("布卡音台");
         SetTitleDevice(_deviceName);
         if (firstTime && leftovers.Count > 0)
         {
@@ -203,7 +203,7 @@ public sealed partial class MainWindow : Window
         // The taskbar button uses Window.Title (Windows App SDK defaults it to
         // "WinUI Desktop") and the window icon, which has to be set explicitly
         // for an unpackaged app.
-        Title = Loc.Current.Text("BukaMusic 控制台");
+        Title = Loc.Current.Text("布卡音台");
         ApplyWindowIcon();
 
         if (AppWindowTitleBar.IsCustomizationSupported())
@@ -347,9 +347,9 @@ public sealed partial class MainWindow : Window
     {
         bool empty = string.IsNullOrWhiteSpace(text);
         _deviceName = empty ? "" : text;
-        string app = Loc.Current.Text("BukaMusic 控制台");
+        string app = Loc.Current.Text("布卡音台");
         TitleDeviceText.Text = empty ? "" : $"· {text}";
-        // Keep the taskbar caption in sync: "BukaMusic 控制台 · <设备名>".
+        // Keep the taskbar caption in sync: "布卡音台 · <设备名>".
         Title = empty ? app : $"{app} · {text}";
     }
 

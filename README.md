@@ -1,12 +1,12 @@
 <h1 align="center">BukaMusic Desktop</h1>
 
-<p align="center"><img src="Assets/logo.png" width="112" alt="BukaMusic"></p>
+<p align="center"><img src="Assets/logo.png" width="112" alt="BukaMusic Desktop"></p>
 
-<p align="center">Windows 桌面控制台：自动发现局域网内的 BukaMusic 安卓设备，控制播放、曲库、多房间与歌词</p>
+<p align="center"><strong>布卡音台</strong> · Windows 桌面控制端：自动发现局域网内的布卡聚音设备，控制播放、曲库、多房间与歌词</p>
 
-<p align="center">配套安卓端：<a href="https://github.com/HAN-BAK/BukaMusic">HAN-BAK/BukaMusic</a></p>
+<p align="center">手机端主应用：<a href="https://github.com/HAN-BAK/BukaMusic">BukaMusic</a> · 互联端：<a href="https://github.com/HAN-BAK/BukaMusic-Connect">BukaMusic Connect</a></p>
 
-<p align="center">下载：<a href="https://github.com/HAN-BAK/BukaMusicDesktop/releases">Releases</a>（Windows 10 1809+ / 64 位）</p>
+<p align="center">下载：<a href="https://github.com/HAN-BAK/BukaMusic-Desktop/releases">Releases</a>（Windows 10 1809+ / 64 位）</p>
 
 ## 功能
 
@@ -14,7 +14,7 @@
 
 ![设备列表](docs/screenshots/01-devices.png)
 
-- 自动发现局域网内的 BukaMusic 设备，也可以手动输入 `IP:端口`；
+- 自动发现局域网内的布卡聚音设备，也可以手动输入 `IP:端口`；
 - 每台设备一张卡片，点击进入控制界面；离线设备自动从列表移除。
 
 ### 播放控制
@@ -70,7 +70,7 @@
 
 1. 运行 `BukaMusicSetup.exe` 安装（可选安装目录），或解压便携版直接运行
    `BukaMusicDesktop.exe`。
-2. 确保安卓设备与电脑在同一局域网，并在设备上打开 BukaMusic。
+2. 确保布卡聚音设备与电脑在同一局域网，并在设备上打开布卡聚音。
 3. 启动后会自动列出设备；点击设备卡片进入控制界面。
 4. 曲库页左键在电脑播放，右键选择「在 <设备> 上播放」。
 5. 多房间页勾选其它设备即可同步播放。

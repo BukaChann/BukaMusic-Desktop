@@ -9,26 +9,26 @@
   <?ifndef PublishDir?>
   <?define PublishDir = "..\publish"?>
   <?endif?>
-  <Package Name="BukaMusic 控制台"
+  <Package Name="布卡音台"
            Manufacturer="WeiFanchuan"
            Version="1.0.8"
            UpgradeCode="7C4E5B2A-9D31-4F58-8A6E-2B1C3D4E5F60"
            Scope="perMachine"
            Language="2052"
            Codepage="65001">
-    <SummaryInformation Description="BukaMusic 桌面控制台 —— 在电脑上发现并控制局域网内的 BukaMusic 安卓设备" />
-    <MajorUpgrade DowngradeErrorMessage="已经安装了更新版本的 BukaMusic 控制台。" />
+    <SummaryInformation Description="布卡音台 —— 在电脑上发现并控制局域网内的布卡聚音设备" />
+    <MajorUpgrade DowngradeErrorMessage="已经安装了更新版本的布卡音台。" />
     <MediaTemplate EmbedCab="yes" CompressionLevel="high" />
 
     <StandardDirectory Id="ProgramFiles64Folder">
-      <Directory Id="INSTALLFOLDER" Name="BukaMusic 控制台" />
+      <Directory Id="INSTALLFOLDER" Name="布卡音台" />
     </StandardDirectory>
     <StandardDirectory Id="ProgramMenuFolder">
-      <Directory Id="AppMenuFolder" Name="BukaMusic 控制台" />
+      <Directory Id="AppMenuFolder" Name="布卡音台" />
     </StandardDirectory>
     <StandardDirectory Id="DesktopFolder" />
 
-    <Feature Id="Main" Title="BukaMusic 控制台" Level="1">
+    <Feature Id="Main" Title="布卡音台" Level="1">
       <ComponentGroupRef Id="AppFiles" />
       <ComponentRef Id="StartMenuShortcut" />
       <ComponentRef Id="DesktopShortcut" />
@@ -50,8 +50,8 @@
     <!-- 开始菜单（所有用户） -->
     <Component Id="StartMenuShortcut" Directory="AppMenuFolder"
                Guid="3F8B6A1D-52C4-4E77-9D0B-6A5E4C3B2A19">
-      <Shortcut Id="StartMenuLink" Name="BukaMusic 控制台"
-                Description="在电脑上发现并控制局域网内的 BukaMusic 安卓设备"
+      <Shortcut Id="StartMenuLink" Name="布卡音台"
+                Description="在电脑上发现并控制局域网内的布卡聚音设备"
                 Target="[INSTALLFOLDER]BukaMusicDesktop.exe"
                 WorkingDirectory="INSTALLFOLDER"
                 Icon="AppIcon" />
@@ -63,8 +63,8 @@
     <!-- 桌面快捷方式（当前用户） -->
     <Component Id="DesktopShortcut" Directory="DesktopFolder"
                Guid="C1D2E3F4-5A6B-47C8-9D0E-1F2A3B4C5D6E">
-      <Shortcut Id="DesktopLink" Name="BukaMusic 控制台"
-                Description="在电脑上发现并控制局域网内的 BukaMusic 安卓设备"
+      <Shortcut Id="DesktopLink" Name="布卡音台"
+                Description="在电脑上发现并控制局域网内的布卡聚音设备"
                 Target="[INSTALLFOLDER]BukaMusicDesktop.exe"
                 WorkingDirectory="INSTALLFOLDER"
                 Icon="AppIcon" />

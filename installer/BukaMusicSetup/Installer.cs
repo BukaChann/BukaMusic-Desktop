@@ -160,11 +160,11 @@ internal static class Installer
             string exe = Path.Combine(dir, AppExe);
             string desktop = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
             string startMenu = Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.Programs), "BukaMusic");
+                Environment.GetFolderPath(Environment.SpecialFolder.Programs), "布卡音台");
             Directory.CreateDirectory(startMenu);
-            CreateShortcut(Path.Combine(desktop, "BukaMusic 控制台.lnk"), exe);
-            CreateShortcut(Path.Combine(startMenu, "BukaMusic 控制台.lnk"), exe);
-            CreateShortcut(Path.Combine(startMenu, "卸载 BukaMusic 控制台.lnk"),
+            CreateShortcut(Path.Combine(desktop, "布卡音台.lnk"), exe);
+            CreateShortcut(Path.Combine(startMenu, "布卡音台.lnk"), exe);
+            CreateShortcut(Path.Combine(startMenu, "卸载布卡音台.lnk"),
                 Path.Combine(dir, "Uninstall.exe"), "--uninstall");
         }
         catch { }
@@ -188,7 +188,7 @@ internal static class Installer
         try
         {
             using var key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(UninstallKey);
-            key.SetValue("DisplayName", "BukaMusic 控制台");
+            key.SetValue("DisplayName", "布卡音台");
             key.SetValue("DisplayVersion", version);
             key.SetValue("Publisher", "HAN-BAK");
             key.SetValue("InstallLocation", dir);
@@ -205,10 +205,10 @@ internal static class Installer
         dir ??= DefaultDir();
         if (!Directory.Exists(dir))
         {
-            MessageBox.Show("没有找到安装目录：" + dir, "BukaMusic");
+            MessageBox.Show("没有找到安装目录：" + dir, "布卡音台");
             return;
         }
-        if (MessageBox.Show("确定要卸载 BukaMusic 控制台吗？\n" + dir, "卸载 BukaMusic",
+        if (MessageBox.Show("确定要卸载布卡音台吗？\n" + dir, "卸载布卡音台",
                 MessageBoxButton.YesNo, MessageBoxImage.Question) != MessageBoxResult.Yes)
         {
             return;
@@ -221,9 +221,9 @@ internal static class Installer
         try
         {
             string desktop = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
-            File.Delete(Path.Combine(desktop, "BukaMusic 控制台.lnk"));
+            File.Delete(Path.Combine(desktop, "布卡音台.lnk"));
             string startMenu = Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.Programs), "BukaMusic");
+                Environment.GetFolderPath(Environment.SpecialFolder.Programs), "布卡音台");
             if (Directory.Exists(startMenu)) Directory.Delete(startMenu, true);
         }
         catch { }
@@ -237,7 +237,7 @@ internal static class Installer
             });
         }
         catch { }
-        MessageBox.Show("已卸载。", "BukaMusic");
+        MessageBox.Show("已卸载。", "布卡音台");
     }
 
     // ------------------------------------------------------------------

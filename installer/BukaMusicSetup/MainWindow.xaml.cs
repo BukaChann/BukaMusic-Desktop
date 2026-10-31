@@ -45,7 +45,7 @@ public partial class MainWindow : Window
         string dir = PathBox.Text.Trim();
         if (dir.Length == 0)
         {
-            MessageBox.Show(this, "请先选择安装位置。", "BukaMusic");
+            MessageBox.Show(this, "请先选择安装位置。", "布卡音台");
             return;
         }
         ShowPage(Page.Progress);
@@ -59,7 +59,7 @@ public partial class MainWindow : Window
         {
             await Installer.InstallAsync(dir, progress, _cts.Token);
             _installedDir = dir;
-            DoneText.Text = "BukaMusic 控制台已经安装到：\n" + dir;
+            DoneText.Text = "布卡音台已经安装到：\n" + dir;
             ShowPage(Page.Done);
         }
         catch (OperationCanceledException)
@@ -68,7 +68,7 @@ public partial class MainWindow : Window
         }
         catch (Exception ex)
         {
-            MessageBox.Show(this, "安装失败：\n" + ex.Message, "BukaMusic",
+            MessageBox.Show(this, "安装失败：\n" + ex.Message, "布卡音台",
                 MessageBoxButton.OK, MessageBoxImage.Error);
             ShowPage(Page.Path);
         }

@@ -1,7 +1,7 @@
 <Window x:Class="BukaMusicSetup.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="BukaMusic 控制台 安装程序"
+        Title="布卡音台安装程序"
         Width="660" Height="440"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
@@ -38,7 +38,7 @@
                         <RectangleGeometry Rect="0,0,76,76" RadiusX="18" RadiusY="18" />
                     </Image.Clip>
                 </Image>
-                <TextBlock Text="BukaMusic" FontSize="24" FontWeight="SemiBold"
+                <TextBlock Text="布卡音台" FontSize="24" FontWeight="SemiBold"
                            Foreground="White" Margin="0,18,0,2" />
                 <TextBlock Text="桌面控制台" FontSize="13" Foreground="#9AA6B2" />
                 <TextBlock Text="安装包从缤纷云下载" FontSize="11"
@@ -76,7 +76,7 @@
             <StackPanel x:Name="PathPage" Grid.Row="0">
                 <TextBlock Text="选择安装位置" FontSize="20" FontWeight="SemiBold"
                            Foreground="{StaticResource TextBrush}" />
-                <TextBlock Text="BukaMusic 控制台会安装到这里，程序文件将从缤纷云下载。"
+                <TextBlock Text="布卡音台会安装到这里，程序文件将从下载源获取。"
                            FontSize="12.5" Foreground="{StaticResource SubTextBrush}"
                            Margin="0,8,0,20" TextWrapping="Wrap" />
                 <Grid>
@@ -94,7 +94,7 @@
                     <StackPanel>
                         <TextBlock Text="安装内容" FontSize="12" FontWeight="SemiBold"
                                    Foreground="{StaticResource TextBrush}" />
-                        <TextBlock Text="• BukaMusic 控制台（自带 .NET 与 Windows App SDK）"
+                        <TextBlock Text="• 布卡音台（自带 .NET 与 Windows App SDK）"
                                    FontSize="12" Foreground="{StaticResource SubTextBrush}"
                                    Margin="0,6,0,0" />
                         <TextBlock Text="• 桌面与开始菜单快捷方式、卸载入口"
@@ -121,10 +121,10 @@
                         VerticalAlignment="Center">
                 <TextBlock Text="安装完成" FontSize="20" FontWeight="SemiBold"
                            Foreground="{StaticResource TextBrush}" />
-                <TextBlock x:Name="DoneText" Text="BukaMusic 控制台已经安装好了。"
+                <TextBlock x:Name="DoneText" Text="布卡音台已经安装好了。"
                            FontSize="12.5" Foreground="{StaticResource SubTextBrush}"
                            Margin="0,8,0,16" TextWrapping="Wrap" />
-                <CheckBox x:Name="RunBox" Content="立即运行 BukaMusic 控制台"
+                <CheckBox x:Name="RunBox" Content="立即运行布卡音台"
                           IsChecked="True" FontSize="12.5" />
             </StackPanel>
 

@@ -13,7 +13,7 @@
                         <Image Source="ms-appx:///Assets/logo.png" Width="48" Height="48"
                                Stretch="Uniform" />
                         <StackPanel VerticalAlignment="Center" Spacing="2">
-                            <TextBlock Text="BukaMusic 控制台" FontFamily="{StaticResource UiFont}"
+                            <TextBlock Text="布卡音台" FontFamily="{StaticResource UiFont}"
                                        FontSize="20" FontWeight="SemiBold"
                                        Foreground="{StaticResource TextPrimaryBrush}" />
                             <TextBlock Text="Android 音乐播放器 / AirPlay 接收 / 多房间同步 的桌面控制端"
@@ -21,7 +21,7 @@
                         </StackPanel>
                     </StackPanel>
                     <TextBlock Style="{StaticResource HintTextStyle}"
-                               Text="本程序通过局域网与安装了 BukaMusic 的安卓设备通信：UDP 广播自动发现设备，HTTP 接口（/api/*）读取状态、控制播放、上传与删除文件、读写设置。" />
+                               Text="本程序通过局域网与安装了布卡聚音的安卓设备通信：UDP 广播自动发现设备，HTTP 接口（/api/*）读取状态、控制播放、上传与删除文件、读写设置。" />
                     <StackPanel Orientation="Horizontal" Spacing="10">
                         <Button Content="打开项目主页" Style="{StaticResource GhostButtonStyle}"
                                 Click="OnOpenProject" />

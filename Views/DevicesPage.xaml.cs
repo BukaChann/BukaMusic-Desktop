@@ -223,7 +223,7 @@ public sealed partial class DevicesPage : Page
         {
             LogBus.Warn($"设备 {device.Name}（{device.EndPoint}）已离线");
             await ShowDialogAsync(Loc.Current.Text("设备已离线"),
-                Loc.Current.Text("设备 {0} ({1}) 已经离线，暂时无法控制。\n请确认手机/盒子上的 BukaMusic 正在运行，且与本机在同一网络。",
+                Loc.Current.Text("设备 {0} ({1}) 已经离线，暂时无法控制。\n请确认手机/盒子上的布卡聚音正在运行，且与本机在同一网络。",
                     device.Name, device.EndPoint));
             Rebuild();
             return;
@@ -237,7 +237,7 @@ public sealed partial class DevicesPage : Page
             _window.SetStatus(Loc.Current.Text("连接 {0} 失败，请确认设备在线", device.EndPoint));
             device.LastSeen = DateTime.MinValue;
             await ShowDialogAsync(Loc.Current.Text("无法连接"),
-                Loc.Current.Text("设备 {0} ({1}) 没有响应。\n请确认手机/盒子上的 BukaMusic 正在运行，且与本机在同一网络。",
+                Loc.Current.Text("设备 {0} ({1}) 没有响应。\n请确认手机/盒子上的布卡聚音正在运行，且与本机在同一网络。",
                     device.Name, device.EndPoint));
             Rebuild();
             return;

@@ -27,7 +27,7 @@ public partial class App : Application
             }
             catch (Exception ex)
             {
-                MessageBox.Show("更新安装失败：\n" + ex.Message, "BukaMusic");
+                MessageBox.Show("更新安装失败：\n" + ex.Message, "布卡音台");
                 Shutdown(1);
             }
             return;

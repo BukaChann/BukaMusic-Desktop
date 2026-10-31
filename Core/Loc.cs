@@ -154,8 +154,8 @@ public sealed class Loc
         AddIdentity("BukaMusic", "AirPlay", "—", "0:00", "0", "0.00");
 
         // ---------------------------------------------------------------- 通用
-        Add("BukaMusic 控制台",
-            "BukaMusic Console", "BukaMusic コンソール", "BukaMusic 콘솔");
+        Add("布卡音台",
+            "BukaMusic Desktop", "BukaMusic Desktop", "BukaMusic Desktop");
         Add("正在搜索局域网内的设备…",
             "Searching for devices on the local network…",
             "ネットワーク上のデバイスを検索しています…",
@@ -185,10 +185,10 @@ public sealed class Loc
 
         // ------------------------------------------------------------ 设备页
         Add("选择设备", "Select a device", "デバイスを選択", "기기 선택");
-        Add("同一局域网内的 BukaMusic 设备会自动出现在下方；点击设备卡片即可开始控制。",
-            "BukaMusic devices on the same network appear below automatically. Click a card to start controlling it.",
-            "同じネットワーク上の BukaMusic デバイスが下に自動表示されます。カードをクリックすると操作を開始できます。",
-            "같은 네트워크에 있는 BukaMusic 기기가 아래에 자동으로 표시됩니다. 카드를 클릭하면 제어를 시작할 수 있습니다.");
+        Add("同一局域网内的布卡聚音设备会自动出现在下方；点击设备卡片即可开始控制。",
+            "BukaMusic Connect devices on the same network appear below automatically. Click a card to start controlling it.",
+            "同じネットワーク上の BukaMusic Connect デバイスが下に自動表示されます。カードをクリックすると操作を開始できます。",
+            "같은 네트워크에 있는 BukaMusic Connect 기기가 아래에 자동으로 표시됩니다. 카드를 클릭하면 제어를 시작할 수 있습니다.");
         Add("手动添加 IP 或 IP:端口",
             "Add an IP or IP:port manually",
             "IP または IP:ポートを手動で追加",
@@ -204,15 +204,15 @@ public sealed class Loc
             "아직 기기를 찾지 못했습니다…\n기기와 PC가 같은 네트워크에 있는지 확인하거나 IP를 직접 추가하세요.");
         Add("打开设备失败", "Could not open the device", "デバイスを開けませんでした", "기기를 열 수 없습니다");
         Add("设备已离线", "Device is offline", "デバイスはオフラインです", "기기가 오프라인입니다");
-        Add("设备 {0} ({1}) 已经离线，暂时无法控制。\n请确认手机/盒子上的 BukaMusic 正在运行，且与本机在同一网络。",
-            "Device {0} ({1}) is offline and cannot be controlled right now.\nMake sure BukaMusic is running on it and that it is on the same network as this PC.",
-            "デバイス {0} ({1}) はオフラインのため操作できません。\nデバイス側で BukaMusic が起動していること、同じネットワークにあることを確認してください。",
-            "기기 {0} ({1})이(가) 오프라인이라 제어할 수 없습니다.\n기기에서 BukaMusic이 실행 중이고 이 PC와 같은 네트워크인지 확인하세요.");
+        Add("设备 {0} ({1}) 已经离线，暂时无法控制。\n请确认手机/盒子上的布卡聚音正在运行，且与本机在同一网络。",
+            "Device {0} ({1}) is offline and cannot be controlled right now.\nMake sure BukaMusic Connect is running on it and that it is on the same network as this PC.",
+            "デバイス {0} ({1}) はオフラインのため操作できません。\nデバイス側で BukaMusic Connect が起動していること、同じネットワークにあることを確認してください。",
+            "기기 {0} ({1})이(가) 오프라인이라 제어할 수 없습니다.\n기기에서 BukaMusic Connect가 실행 중이고 이 PC와 같은 네트워크인지 확인하세요.");
         Add("无法连接", "Cannot connect", "接続できません", "연결할 수 없습니다");
-        Add("设备 {0} ({1}) 没有响应。\n请确认手机/盒子上的 BukaMusic 正在运行，且与本机在同一网络。",
-            "Device {0} ({1}) did not respond.\nMake sure BukaMusic is running on it and that it is on the same network as this PC.",
-            "デバイス {0} ({1}) から応答がありません。\nデバイス側で BukaMusic が起動していること、同じネットワークにあることを確認してください。",
-            "기기 {0} ({1})이(가) 응답하지 않습니다.\n기기에서 BukaMusic이 실행 중이고 이 PC와 같은 네트워크인지 확인하세요.");
+        Add("设备 {0} ({1}) 没有响应。\n请确认手机/盒子上的布卡聚音正在运行，且与本机在同一网络。",
+            "Device {0} ({1}) did not respond.\nMake sure BukaMusic Connect is running on it and that it is on the same network as this PC.",
+            "デバイス {0} ({1}) から応答がありません。\nデバイス側で BukaMusic Connect が起動していること、同じネットワークにあることを確認してください。",
+            "기기 {0} ({1})이(가) 응답하지 않습니다.\n기기에서 BukaMusic Connect가 실행 중이고 이 PC와 같은 네트워크인지 확인하세요.");
         Add("正在连接 {0} ({1})…",
             "Connecting to {0} ({1})…",
             "{0} ({1}) に接続しています…",
@@ -483,10 +483,10 @@ public sealed class Loc
             "Desktop console for the Android music player, AirPlay receiver and multi-room sync",
             "Android 音楽プレーヤー / AirPlay 受信 / マルチルーム同期のデスクトップコンソール",
             "Android 음악 플레이어 / AirPlay 수신 / 멀티룸 동기화 데스크톱 콘솔");
-        Add("本程序通过局域网与安装了 BukaMusic 的安卓设备通信：UDP 广播自动发现设备，HTTP 接口（/api/*）读取状态、控制播放、上传与删除文件、读写设置。",
-            "The console talks to Android devices running BukaMusic over the local network: a UDP broadcast discovers them, and the HTTP API (/api/*) reads the state, controls playback, uploads and deletes files and reads or writes the settings.",
-            "このコンソールは LAN 経由で BukaMusic をインストールした Android デバイスと通信します。UDP ブロードキャストで自動検出し、HTTP API（/api/*）で状態取得・再生制御・ファイルのアップロードと削除・設定の読み書きを行います。",
-            "이 콘솔은 같은 네트워크에서 BukaMusic이 설치된 Android 기기와 통신합니다. UDP 브로드캐스트로 기기를 찾고, HTTP API(/api/*)로 상태 조회, 재생 제어, 파일 업로드/삭제, 설정 읽기/쓰기를 수행합니다.");
+        Add("本程序通过局域网与安装了布卡聚音的安卓设备通信：UDP 广播自动发现设备，HTTP 接口（/api/*）读取状态、控制播放、上传与删除文件、读写设置。",
+            "The BukaMusic Desktop console talks to Android devices running BukaMusic Connect over the local network: a UDP broadcast discovers them, and the HTTP API (/api/*) reads state, controls playback, uploads and deletes files and reads or writes settings.",
+            "この BukaMusic Desktop コンソールは LAN 経由で BukaMusic Connect をインストールした Android デバイスと通信します。UDP ブロードキャストで自動検出し、HTTP API（/api/*）で状態取得・再生制御・ファイルのアップロードと削除・設定の読み書きを行います。",
+            "BukaMusic Desktop 콘솔은 같은 네트워크에서 BukaMusic Connect가 설치된 Android 기기와 통신합니다. UDP 브로드캐스트로 기기를 찾고, HTTP API(/api/*)로 상태 조회, 재생 제어, 파일 업로드/삭제, 설정 읽기/쓰기를 수행합니다.");
         Add("打开项目主页", "Open project page", "プロジェクトページを開く", "프로젝트 페이지 열기");
         Add("打开设置文件位置", "Open settings folder", "設定ファイルの場所を開く", "설정 파일 위치 열기");
         Add("设备端接口", "Device API", "デバイス側 API", "기기 API");

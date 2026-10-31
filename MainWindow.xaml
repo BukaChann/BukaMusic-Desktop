@@ -21,7 +21,7 @@
                         Spacing="10">
                 <Image Source="ms-appx:///Assets/logo.png" Width="18" Height="18"
                        Stretch="Uniform" />
-                <TextBlock x:Name="TitleAppText" Text="BukaMusic 控制台" VerticalAlignment="Center"
+                <TextBlock x:Name="TitleAppText" Text="布卡音台" VerticalAlignment="Center"
                            FontFamily="{StaticResource UiFont}" FontSize="13"
                            Foreground="{StaticResource TextPrimaryBrush}" />
                 <controls:MarqueeText x:Name="TitleDeviceText" Text="" MaxWidth="420"
